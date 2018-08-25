@@ -1,6 +1,6 @@
-body
-{
-background: linear-gradient(to right,  #8e9eab, #eef2f3); 
+body{
+/*background: linear-gradient(to right,  #8e9eab, #eef2f3);*/ 
+    background-color: aqua;
 }
 .title{
     font-variant: small-caps;
@@ -11,7 +11,7 @@ background: linear-gradient(to right,  #8e9eab, #eef2f3);
 .menu-bar{
     /*overflow: hidden;*/
     position: sticky;
-    top: 0px;
+    /*top: 0px;*/
     border: 2px solid blue;
     background-color:blue;
     height: 50px;
@@ -49,8 +49,69 @@ background: linear-gradient(to right,  #8e9eab, #eef2f3);
 }
 .link1{
     color: black;
+    display: inline;
 }
 .link1:hover{
     color: black;
     text-decoration: none;
+}
+.icon{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+  .link1{display: none;}
+  .icon {
+      display: block;
+      color:black;
+      background-color: red;
+      max-width:30px;
+      padding:5px 7px 5px 7px;
+      margin-left: 5px;
+     
+    cursor: pointer;
+      float: right;
+  }
+    .icon:hover{
+        color:black;
+    }
+}
+@media screen and (max-width: 600px) {
+  .menu-bar.responsive {position: relative;}
+  .icon {
+    position: absolute;
+  }
+    .menu-bar.responsive .link1{
+    display: block;
+  }
+    .link1{
+        margin-top:7px;
+    }
+    .menu-item{
+        margin-left: 0;
+    }
+    .bg1{
+        background-color: blue;
+        width:100px;
+         margin-top: 38px;
+    }
+    .active{
+       border: 2px solid aqua;
+        background-color:aqua;
+        padding-top:0;
+        padding-bottom:0;
+        text-align: left;
+        width: 100px;
+    }
+    .active1{
+       border: 2px solid aqua;
+        background-color:aqua;
+        padding-top:0;
+        padding-bottom:0;
+        text-align: left;
+        width: 100px;
+    }
+    .logsign{
+        float:none;
+        margin-top: 10px;
+    }
 }
