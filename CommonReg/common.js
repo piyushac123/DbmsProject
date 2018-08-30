@@ -1,8 +1,7 @@
-function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "menu-bar") {
-            x.className += " responsive";
-        } else {
-            x.className = "menu-bar";
-        }
-        }
+$(document).ready(function(){
+               $('.hamburger').click(function(){
+                  $('.menu').toggleClass('menu1');
+                   $('.item').toggleClass('item1');
+                   $('.hamburger').toggleClass('active11');
+               });
+            });
