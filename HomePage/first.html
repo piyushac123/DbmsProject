@@ -13,8 +13,8 @@
         <script src="first.js"></script>
         <script src="../CommonReg/common.js"></script>
     </HEAD>
-    <BODY>
-        <H1 class="title">Food Cart</H1>
+    <BODY  data-spy="scroll" data-target="#myScroll" data-offset="20">
+        <!--<H1 class="title">Food Cart</H1>-->
         <div class="menu-bar" id="myTopnav" style="z-index: 1">
             <a href="#" onclick="myFunction()" >
                   <div class="hamburger" id="#ham1">
@@ -24,14 +24,14 @@
                 </div>
             </a>
             <div class="menu">
-                <a href="first.html" class="link1 item"><span class="menu-item active">Home</span></a>
+                <a href="first.html" class="link1 item"><span class="menu-item active1">Home</span></a>
                 <a href="../AboutUs/about.html" class="link1 item"><span class="menu-item">About Us</span></a>
                 <a href="../ContactUs/contact.html" class="link1 item"><span class="menu-item">Contact</span></a>
                 <a href="../LoginPage/login.html" class="link1 item"><span class="logsign">Login</span></a>
                 <a href="../Registeration/reg.html" class="link1 item"><span class="logsign">Sign Up</span></a>
             </div>
         </div>
-        <div class="shift-down"></div>
+        <!--<div class="shift-down"></div>
         <div class="container-float">
             <div class="row">
                 <div class="col-lg-3 col-sm-12">
@@ -51,6 +51,174 @@
                     <acronym title="Fast Food"><center><img src="../Images/Desert.jpg" class="image1"></center></acronym>
                 </div>
             </div>
+        </div>-->
+        <div class="container-float">
+            <div class="row">
+                <div class="col-lg-3 col-sm-0" id="myScroll">
+                    <nav class="nav nav-stacked" style="position:fixed">
+                        <li class="list1"><a href="#section1"class="link11">Section1</a></li>
+                        <li class="list1"><a href="#section2" class=" link11">Section2</a></li>
+                        <li class="list1"><a href="#section3" class=" link11">Section3</a></li>
+                        <li class="list1"><a href="#section4" class=" link11">Section4</a></li>
+                    </nav>
+                </div>
+                    <div class="col-lg-3 col-sm-12">
+                        <div id="section1">
+                            <h2>Section 1</h2>
+                            <hr style="color: black">
+                            <div class="sec">
+                            <p class="titlerest">Restaurant</p>
+                            <img src="../Images/Desert.jpg" class="image1" style="z-index: 0">
+                                <div style="margin: 5px 0 5px 0">
+                                    <span class="label label-primary">&#x2605; Primary Label</span>
+                                    <span class="lowerItem">Time</span>
+                                    <span class="lowerItem">Price</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="color: black">
+                        <div id="section2">
+                            <h2>Section 2</h2>
+                            <hr>
+                             <div class="sec">
+                            <p class="titlerest">Restaurant</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                                 <div style="margin: 5px 0 5px 0">
+                                    <span class="label label-primary">&#x2605; Primary Label</span>
+                                    <span class="lowerItem">Time</span>
+                                    <span class="lowerItem">Price</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="color: black">
+                        <div id="section3">
+                            <h2>Section 3</h2>
+                            <hr>
+                             <div class="sec">
+                            <p class="titlerest">Restaurant</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                                 <div style="margin: 5px 0 5px 0">
+                                    <span class="label label-primary">&#x2605; Primary Label</span>
+                                    <span class="lowerItem">Time</span>
+                                    <span class="lowerItem">Price</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="color: black">
+                        <div id="section4">
+                            <h2>Section 4</h2>
+                            <hr>
+                             <div class="sec">
+                            <p class="titlerest">Restaurant</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                                 <div style="margin: 5px 0 5px 0">
+                                    <span class="label label-primary">&#x2605; Primary Label</span>
+                                    <span class="lowerItem">Time</span>
+                                    <span class="lowerItem">Price</span>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                    <div class="col-sm-3 col-sm-12">
+                        <div id="section1" class="sec1">
+                            <p class="titlerest">Restaurant</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                            <div style="margin: 5px 0 5px 0">
+                                    <span class="label label-primary">&#x2605; Primary Label</span>
+                                    <span class="lowerItem">Time</span>
+                                    <span class="lowerItem">Price</span>
+                                </div>
+                        </div>
+                        <hr>
+                        <div id="section2" class="sec2">
+                            <p class="titlerest">Restaurant</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                            <div style="margin: 5px 0 5px 0">
+                                    <span class="label label-primary">&#x2605; Primary Label</span>
+                                    <span class="lowerItem">Time</span>
+                                    <span class="lowerItem">Price</span>
+                                </div>
+                        </div>
+                        <hr>
+                        <div id="section3" class="sec3">
+                            <p class="titlerest">Restaurant</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                            <div style="margin: 5px 0 5px 0">
+                                    <span class="label label-primary">&#x2605; Primary Label</span>
+                                    <span class="lowerItem">Time</span>
+                                    <span class="lowerItem">Price</span>
+                                </div>
+                        </div>
+                        <hr>
+                        <div id="section4" class="sec4">
+                            <p class="titlerest">Restaurant</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                            <div style="margin: 5px 0 5px 0">
+                                    <span class="label label-primary">&#x2605; Primary Label</span>
+                                    <span class="lowerItem">Time</span>
+                                    <span class="lowerItem">Price</span>
+                                </div>
+                        </div>
+                   </div>
+                    <div class="col-sm-3 col-sm-12">
+                        <div id="section1" class="sec1">
+                            <p class="titlerest">Restaurant</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                            <div style="margin: 5px 0 5px 0">
+                                    <span class="label label-primary">&#x2605; Primary Label</span>
+                                    <span class="lowerItem">Time</span>
+                                    <span class="lowerItem">Price</span>
+                                </div>
+                        </div>
+                        <hr>
+                        <div id="section2" class="sec2">
+                            <p class="titlerest">Restaurant</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                            <div style="margin: 5px 0 5px 0">
+                                    <span class="label label-primary">&#x2605; Primary Label</span>
+                                    <span class="lowerItem">Time</span>
+                                    <span class="lowerItem">Price</span>
+                                </div>
+                        </div>
+                        <hr>
+                        <div id="section3" class="sec3">
+                            <p class="titlerest">Restaurant</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                            <div style="margin: 5px 0 5px 0">
+                                    <span class="label label-primary">&#x2605; Primary Label</span>
+                                    <span class="lowerItem">Time</span>
+                                    <span class="lowerItem">Price</span>
+                                </div>
+                        </div>
+                        <hr>
+                        <div id="section4" class="sec4">
+                            <p class="titlerest">Restaurant</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                            <div style="margin: 5px 0 5px 0">
+                                    <span class="label label-primary">&#x2605; Primary Label</span>
+                                    <span class="lowerItem">Time</span>
+                                    <span class="lowerItem">Price</span>
+                                </div>
+                        </div>
+                   </div>
+                       <!-- <div id="section2"> 
+                            <h1>Section 2</h1>
+                            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                        </div>        
+                        <div id="section3">         
+                            <h1>Section 3</h1>
+                            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                        </div>
+                        <div id="section4">         
+                            <h1>Section 4</h1>
+                            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+                            <img src="../Images/Desert.jpg" class="image1">
+                        </div>-->     
+                
+            </div>
         </div>
+        <div style="margin-bottom: 300px;"></div>
     </BODY>
 </HTML>

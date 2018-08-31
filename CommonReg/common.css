@@ -124,7 +124,7 @@ body{
             .menu-bar{
                 /*overflow: hidden;*/
                 position: sticky;
-                /*top: 0px;*/
+                top: 0px;
                 border: 2px solid blue;
                 background-color:blue;
                 height: 44px;
@@ -148,13 +148,13 @@ body{
     font-variant: small-caps;
     cursor: pointer;
 }
-.active{
+.active1{
     border: 2px solid aqua;
     background-color:aqua;
     width:auto;
     padding:0 0 9px 0;
 }
-.active1{
+.active2{
     border: 2px solid aqua;
     background-color:aqua;
     width:auto;
@@ -175,7 +175,7 @@ body{
                 .menu-bar{
                     /*overflow: hidden;*/
                 position: sticky;
-                /*top: 0px;*/
+                top: 0px;
                 border: 2px solid blue;
                 background-color:blue;
                 height: 44px;
@@ -264,13 +264,13 @@ body{
                 -o-transform: translateY(-9px) rotate(-45deg);
                 transform: translateY(-9px) rotate(-45deg);
             }
-                .active{
+                .active1{
                     width: 100%;
                     background-color: blue;
                     border: 2px solid blue;
                     padding-bottom: 0;
                 }
-                .active1{
+                .active2{
                     width: 100%;
                     background-color: blue;
                     border: 2px solid blue;

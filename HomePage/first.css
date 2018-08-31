@@ -1,44 +1,102 @@
-/*
-.row{
-    margin:auto;
-    float: left;
+.btn-info{
+    font-weight: bold;
+    width:inherit;
+    padding:5px;
 }
-.col-lg-4{
-    padding:40px;
-    border: 2px solid gray;
+.lowerItem{
+    border-left: 1px solid black;
+    padding-left: 30px;
+    font-weight: bold;
+    padding-right: 10px;
 }
-.image1{
-    max-width: 400px;
-    height:400px;
-    width:auto;
+.label{
+    margin-right: 10px;
 }
-/*.firstcol{
-    margin-right:20px;
+.list1{
+    list-style-type: none;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    margin-top:5px;
+    width:400px;
 }
-.midcol{
-margin-left: 30px;
+.list1:hover{
+    list-style-type: none;
+    padding: 5px;
+    z-index: 0;
 }
-.lastcol{
-    margin-left: 60px;
+.link11{
+    color: white;
 }
-.titlerest{
-    font-variant: small-caps;
-    margin:auto;
-    color:gray;
-}*/
+.link11:hover{
+    color: black;
+    text-decoration: none;
+}
+.active{
+    opacity:0.5;
+    background-color:blue; 
+    padding: 5px 170px 5px 158px;
+}
+
+.nav{
+    margin-left: 10px;
+}
 .container-float{
     margin-top: 30px;
     z-index: 0;
+    overflow-x: hidden;
 }
 .image1{
     max-width: 300px;
-    height:350px;
+    height:250px;
     width:inherit;
 }
-.col-lg-3{
-    padding:40px;
+@media screen and max-width:600px{
+nav{
+    display: none;
 }
-.col-lg-3:hover{
+}
+.sec1{
+    border:1px solid black;
+    max-width: 310px;
+    padding: 5px;
+    z-index: 0;
+    margin-top: 95px;
+}
+.sec2{
+    border:1px solid black;
+    max-width: 310px;
+    padding: 5px;
+    z-index: 0;
+    margin-top: 90px;
+}
+.sec3{
+    border:1px solid black;
+    max-width: 310px;
+    padding: 5px;
+    z-index: 0;
+    margin-top: 95px;
+}
+.sec4{
+    border:1px solid black;
+    max-width: 310px;
+    padding: 5px;
+    z-index: 0;
+    margin-top: 90px;
+}
+.sec{
+    border:1px solid black;
+    max-width: 310px;
+    padding: 5px;
+    z-index: 0;
+}
+.col-lg-3{
+    margin-bottom:40px;
+}
+/*.sec:hover,.sec1:hover,.sec2:hover,.sec3:hover,.sec4:hover{
+    cursor: pointer
+}*/
+/*.col-lg-3:hover{
     border: 1px solid gray;
     padding:39px;
 }
@@ -55,9 +113,8 @@ margin-left: 40px;
 }*/
 .titlerest{
     font-variant: small-caps;
-   text-align: center;
     color:gray;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-left: 5px;
     font-weight: bold;
 }
