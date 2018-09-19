@@ -1,3 +1,17 @@
+.more-item{
+    float:right;
+    font-weight: bold;
+    padding:5px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.link-more{
+    color:white;
+}
+.link-more:hover{
+    color:white;
+    text-decoration: none;
+}
 .btn-info{
     font-weight: bold;
     width:inherit;
@@ -33,7 +47,7 @@
     text-decoration: none;
 }
 .active{
-    opacity:0.8	;
+    opacity:0.8;
     background-color:darkblue; 
     padding: 5px 170px 5px 158px;
 }
@@ -51,10 +65,26 @@
     height:250px;
     width:inherit;
 }
-@media screen and max-width:600px{
-nav{
+/*Display more items*/
+.display1{
     display: none;
 }
+.display2{
+    display: block;
+}
+@media screen and (max-width:600px){
+#myScroll{
+    display: none;
+}
+.display1{
+    display: block;
+}
+.display2{
+    display: none;
+}
+    .display-items{
+        display: none;
+    }
 }
 .sec1{
     border:1px solid black;
@@ -118,3 +148,253 @@ margin-left: 40px;
     margin-left: 5px;
     font-weight: bold;
 }
+/*For Footer*/
+.fa1{
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+cursor:pointer;
+}
+.f-title{
+	font-family: 'Molengo', Georgia, Times, serif;
+	font-size: 40px;
+	line-height: 50px;
+font-variant:small-caps;
+}
+.fa1:hover{
+color:white;
+}
+.li1{
+line-height:30px;
+font-size:25px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+text-shadow:1px 1px black;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+border:1px solid #007bb5;
+  color: white;
+text-shadow:1px 1px black;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+text-shadow:1px 1px black;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+text-shadow:1px 1px black;
+}
+.linkf{
+text-decoration:none;
+}
+.linkf:hover{
+text-decoration:none;
+color:lightblue;
+}
+/*For Login Dialogue Box*/
+/* Mask for background, by default is not display */
+#mask {
+    display: none;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 999;
+}
+
+/* You can customize to your needs  */
+.login-popup {
+    display: none;
+    background: #333;
+    padding: 10px;
+    border: 2px solid #ddd;
+    float: left;
+    font-size: 1.2em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99999;
+    box-shadow: 0px 0px 20px #999;
+    /* CSS3 */
+        -moz-box-shadow: 0px 0px 20px #999;
+    /* Firefox */
+        -webkit-box-shadow: 0px 0px 20px #999;
+    /* Safari, Chrome */
+	border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    /* Firefox */
+        -webkit-border-radius: 3px;
+    /* Safari, Chrome */;
+}
+
+img.btn_close {
+    Position the close button
+	float: right;
+    margin: -28px -28px 0 0;
+}
+
+fieldset {
+    border: none;
+}
+
+form.signin .textbox label {
+    display: block;
+    padding-bottom: 7px;
+}
+
+form.signin .textbox span {
+    display: block;
+}
+
+form.signin p, form.signin span {
+    color: #999;
+    font-size: 11px;
+    line-height: 18px;
+}
+
+form.signin .textbox input {
+    background: #666666;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #000;
+    border-right: 1px solid #333;
+    border-top: 1px solid #000;
+    color: #fff;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font: 13px Arial, Helvetica, sans-serif;
+    padding: 6px 6px 4px;
+    width: 200px;
+}
+
+form.signin input:-moz-placeholder {
+    color: #bbb;
+    text-shadow: 0 0 2px #000;
+}
+
+form.signin input::-webkit-input-placeholder {
+    color: #bbb;
+    text-shadow: 0 0 2px #000;
+}
+
+.button1 {
+    background: -moz-linear-gradient(center top, #f3f3f3, #dddddd);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(#dddddd));
+    background: -o-linear-gradient(top, #f3f3f3, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#f3f3f3', EndColorStr='#dddddd');
+    border-color: #000;
+    border-width: 1px;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px 6px 4px;
+    margin-top: 10px;
+    font: 12px;
+    width: 214px;
+}
+
+.button1:hover {
+    background: #ddd;
+}
+img.btn_close {
+    float:right;
+    top:0;
+	margin-right: -35px;
+    margin-top:-65px;
+}
+#mask {
+	display: none;
+	background: #000; 
+	position: fixed; left: 0; top: 0; 
+	z-index: 10;
+	width: 100%; height: 100%;
+	opacity: 0.8;
+	z-index: 999;
+}
+fieldset { 
+	border:none; 
+}
+.forgot{
+    color:black;
+}
+.forgot:hover{
+    color:black;
+    text-decoration: none;
+}
+.back
+{
+    border: 4px solid gray;
+    background-color: blue;
+    max-width: 300px;
+    width:auto;
+    padding: 50px 25px 50px 13px;
+}
+input[type=submit]
+{
+    border: 2px solid lightgray;
+    padding: 5px 10px 5px 10px;
+}
+input[type=submit]:hover
+{
+    border: 2px solid lightgray;
+    padding: 5px 10px 5px 10px;
+    background-color:lightgray;
+}
+.link2{
+    color: black;
+    display: inline;
+}
+.link2:hover{
+    color: black;
+    text-decoration: none;
+}
+.iconlog{
+    background-color: lightgray;
+    padding:5px;
+}
+.input1{
+    margin-bottom: 25px;
+    width: 220px;
+    color:black;
+    
+}
+.input2{
+    margin-bottom: 15px;
+    width:250px;
+}
+.input3{
+    margin-bottom: 20px;
+    width:250px;
+}
+.titlelog{
+    font-variant: small-caps;
+    margin:auto;
+    color:black;
+    margin-bottom: 25px;
+}
+.smalltit{
+    font-variant: small-caps;
+    font-size: 13px;
+    text-align: left;
+    margin-left: 18px;
+    color:black;
+}
+/*Login End*/

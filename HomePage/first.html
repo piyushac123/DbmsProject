@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="../CommonReg/common.css">
         <script src="first.js"></script>
         <script src="../CommonReg/common.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <link rel="canonical" href="http://www.alessioatzeni.com/wp-content/tutorials/jquery/login-box-modal-dialog-window/index.html" />
     </HEAD>
     <BODY  data-spy="scroll" data-target="#myScroll" data-offset="20">
         <!--<H1 class="title">Food Cart</H1>-->
@@ -27,8 +29,8 @@
                 <a href="first.html" class="link1 item"><span class="menu-item active1">Home</span></a>
                 <a href="../AboutUs/about.html" class="link1 item"><span class="menu-item">About Us</span></a>
                 <a href="../ContactUs/contact.html" class="link1 item"><span class="menu-item">Contact</span></a>
-                <a href="../LoginPage/login.html" class="link1 item"><span class="logsign">Login</span></a>
-                <a href="../Registeration/reg.html" class="link1 item"><span class="logsign">Sign Up</span></a>
+                <a href="#login-box" class="link1 item login-window"><span class="logsign">Login</span></a>
+                <a href="#register-box" class="link1 item login-window"><span class="logsign">Sign Up</span></a>
             </div>
         </div>
         <!--<div class="shift-down"></div>
@@ -74,6 +76,7 @@
                                     <span class="lowerItem">Time</span>
                                     <span class="lowerItem">Price</span>
                                 </div>
+                                <div class="label label-primary more-item display1"><a href="#" class="link-more">More..</a></div>
                             </div>
                         </div>
                         <hr style="color: black">
@@ -88,6 +91,7 @@
                                     <span class="lowerItem">Time</span>
                                     <span class="lowerItem">Price</span>
                                 </div>
+                                 <div class="label label-primary more-item display1"><a href="#" class="link-more">More..</a></div>
                             </div>
                         </div>
                         <hr style="color: black">
@@ -102,6 +106,7 @@
                                     <span class="lowerItem">Time</span>
                                     <span class="lowerItem">Price</span>
                                 </div>
+                                 <div class="label label-primary more-item display1"><a href="#" class="link-more">More..</a></div>
                             </div>
                         </div>
                         <hr style="color: black">
@@ -116,9 +121,11 @@
                                     <span class="lowerItem">Time</span>
                                     <span class="lowerItem">Price</span>
                                 </div>
+                                 <div class="label label-primary more-item display1" ><a href="#" class="link-more">More..</a></div>
                             </div>
                         </div>
                    </div>
+                <div class="display-items">
                     <div class="col-sm-3 col-sm-12">
                         <div id="section1" class="sec1">
                             <p class="titlerest">Restaurant</p>
@@ -169,6 +176,7 @@
                                     <span class="lowerItem">Time</span>
                                     <span class="lowerItem">Price</span>
                                 </div>
+                            <div class="label label-primary more-item display2"><a href="#" class="link-more">More..</a></div>
                         </div>
                         <hr>
                         <div id="section2" class="sec2">
@@ -179,6 +187,7 @@
                                     <span class="lowerItem">Time</span>
                                     <span class="lowerItem">Price</span>
                                 </div>
+                            <div class="label label-primary more-item display2"><a href="#" class="link-more">More..</a></div>
                         </div>
                         <hr>
                         <div id="section3" class="sec3">
@@ -189,6 +198,7 @@
                                     <span class="lowerItem">Time</span>
                                     <span class="lowerItem">Price</span>
                                 </div>
+                            <div class="label label-primary more-item display2"><a href="#" class="link-more">More..</a></div>
                         </div>
                         <hr>
                         <div id="section4" class="sec4">
@@ -199,8 +209,10 @@
                                     <span class="lowerItem">Time</span>
                                     <span class="lowerItem">Price</span>
                                 </div>
+                            <div class="label label-primary more-item display2"><a href="#" class="link-more">More..</a></div>
                         </div>
                    </div>
+                </div>
                        <!-- <div id="section2"> 
                             <h1>Section 2</h1>
                             <p>Try to scroll this section and look at the navigation list while scrolling!</p>
@@ -219,6 +231,94 @@
                 
             </div>
         </div>
-        <div style="margin-bottom: 300px;"></div>
+<!--Start For Login-->   
+<div id="login-box" class="login-popup back">
+    <a href="#" class="close"><img src="../Images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+    <h3 class="titlelog" align="center">Login Page</h3>
+    <form method="post" class="signin" action="#">
+        <fieldset>
+        <div class="smalltit">User Name</div>
+            <span class="iconlog"><i class="glyphicon glyphicon-user"></i></span>
+            <span><input type="text" name="Username" class="input1"></span>
+            <div class="smalltit">Password</div>
+            <span class="iconlog"><i class="glyphicon glyphicon-lock"></i></span>
+            <span><input type="password" name="Password" class="input1"></span><br>
+            <a href="../HomePage/first.html" class="link2">
+            <input type="submit" value="Login" onclick="alert('You have successfully Logged In.')">
+            </a><br>
+        <a class="forgot" href="#" align="center">Forgot your password?</a>
+            
+        </fieldset>
+    </form>
+</div>
+<!--End For SignUp-->
+        <!--Start For Login-->   
+<div id="register-box" class="login-popup back" align="center" >
+    <a href="#" class="close"><img src="../Images/close_pop.png" class="btn_close" title="Close Window" alt="Close" /></a>
+    <h3 class="titlelog">Register Now!</h3>
+    <form method="post" class="signin" action="#">
+        <fieldset>
+        <input type="text" placeholder="Enter Full Name" class="input2">
+            <input type="email" placeholder="example@gmail.com" class="input2">
+            <input type="text" placeholder="Enter UserName" class="input2">
+            <input type="password" placeholder="Enter Password" class="input2">
+            <input type="password" placeholder="Re-enter Password" class="input3">
+            <a href="../HomePage/first.html" class="link2">
+            <input type="submit" value="Sign Up"  onclick="alert('Your account is being created')">
+            </a>
+            
+        </fieldset>
+    </form>
+</div>
+<!--End For SignUp-->
+        <!--<div style="margin-bottom: 300px;"></div>
+        
+        <div class="container-float">
+            <div class="row">
+                <div class="col-lg-3 col-sm-12">
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                </div>
+            </div>
+        </div>
+        -->
+        <div style="background-color:rgb(91,163,192);color:white;bottom: 0;">
+            <span class="container">
+                <span class="row">
+                <span class="col-lg-4 col-sm-12">
+                    <ul style="list-style-type:none">
+                        <p class="f-title">About us</p>
+                        <li class="li1"><a href="#" target="_blank" class="linkf">link</a></li>
+                        <li class="li1"><a href="#" target="_blank" class="linkf">link</a></li>
+                        <li class="li1"><a href="#" target="_blank" class="linkf">link</a></li>
+                        <li class="li1"><a href="#" target="_blank" class="linkf">link</a></li>
+                    </ul>
+                </span>
+            <span class="col-lg-4 col-sm-12">
+                <p style="text-indent:50px" class="f-title">Contact us</p>
+                <br><br>
+                <!-- Add font awesome icons -->
+                <a href="http://facebook.com/" target="_blank" class="fa fa-facebook fa1"  style="text-decoration:none"></a>
+                <a href="http://twitter.com/" target="_blank" class="fa fa-twitter fa1" style="text-decoration:none"></a>
+                <a href="https://plus.google.com/" target="_blank" class="fa fa-google fa1" style="text-decoration:none"></a>
+                <a href="https://in.linkedin.com/" target="_blank" class="fa fa-linkedin fa1" style="text-decoration:none"></a>
+
+                    </span>
+            <span class="col-lg-4 col-sm-12">
+                <ul style="list-style-type:none">
+                    <p class="f-title">Information</p>
+                    <li class="li1">info</li>
+                    <li class="li1">info</li>
+                    <li class="li1">info</li>
+                    <li class="li1">info</li>
+                </ul>
+                    </span>
+                </span>
+            </span>
+        </div>
     </BODY>
 </HTML>
