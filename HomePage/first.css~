@@ -33,7 +33,7 @@
     text-decoration: none;
 }
 .active{
-    opacity:0.8	;
+    opacity:0.8;
     background-color:darkblue; 
     padding: 5px 170px 5px 158px;
 }

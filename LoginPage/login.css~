@@ -1,7 +1,7 @@
 .back
 {
     border: 4px solid gray;
-    background-color: rgb(91,163,192);
+    background-color: blue;
     opacity:0.9;
     max-width: 300px;
     width:auto;
