@@ -1,0 +1,46 @@
+/*Restaurants*/
+.titlerest{
+    font-variant: small-caps;
+    color:gray;
+    font-size: 20px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.image1{
+    max-width: 300px;
+    height:250px;
+    width:inherit;
+}
+.lowerItem{
+    border-left: 1px solid black;
+    padding-left: 30px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.label{
+    margin-right: 10px;
+}
+.more-item{
+    float:right;
+    font-weight: bold;
+    padding:5px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.link-more{
+    color:white;
+}
+.link-more:hover{
+    color:white;
+    text-decoration: none;
+}
+.sec{
+    border:1px solid black;
+    max-width: 310px;
+    padding: 5px;
+    z-index: 0;
+}
+.sec:hover{
+    cursor:pointer;
+}
+/*End Restaurants*/
