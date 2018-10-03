@@ -1,0 +1,28 @@
+table{
+
+	font-size: 20px;
+
+}
+span.price {
+  float: right;
+  color: grey;
+}
+
+.cart
+{
+
+display: none;
+
+}
+
+.btn_class_1
+{
+
+	display: none;
+}
+
+.btn_class_2
+{
+
+	display: none;
+}

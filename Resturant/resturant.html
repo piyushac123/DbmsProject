@@ -8,9 +8,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="first.css">
+        <link rel="stylesheet" href="resturant.css">
         <link rel="stylesheet" href="../CommonReg/common.css">
-        <script src="first.js"></script>
+
+        <script src="resturant.js"></script>
         <script src="../CommonReg/common.js"></script>
     </HEAD>
     <BODY>
@@ -29,15 +30,42 @@
                 <a href="../Registeration/reg.html" class="link1 item"><span class="logsign">Sign Up</span></a>
             </div>
         </div>
+
+
+        <div class="container">
+	  <div class="jumbotron">
+	    <div class="row">
+	 	
+	 		<div class="col-lg-4">
+	 			<img src="../Images/Desert.jpg" width="300px" height="300px">
+	 		</div>
+
+	 		<div class="col-lg-8" style="padding-left: 150px">
+	 			<h1>Name</h1>      
+	 			 <p>location</p>      
+				  <p>rating</p>      
+	 		</div>
+
+
+	 	</div>	
+	    
+	 
+	</div>
+
+
+
+
+
         <div class="container">
 <div class="row">
 <div class="col-lg-3">
-  <ul class="nav nav-pills nav-stacked">
+ <b> <ul class="nav nav-pills nav-stacked">
     <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
     <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
     <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
     <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
   </ul>
+  </b>
   </div>
   <div class="col-lg-6">
   <div class="tab-content">
@@ -55,7 +83,16 @@
       <tr>
         <td>John</td>
         <td>Doe</td>
-        <td><button>Add</button></td>
+        <td>
+        	<button class="btn-class">Add</button>
+        	<table class="table table-condensed">
+        	<tr>	
+        	<td><span class="fa fa-minus btn_class_2"></span></td>
+        	<td><span><b><p id="qty"></p></b></span></td>
+        	<td><span class="fa fa-plus btn_class_1"></span></td>
+        	</tr>
+        	</table>
+        </td>
       </tr>
       <tr>
         <td>Mary</td>
@@ -142,7 +179,7 @@
       <tr>
         <td>John</td>
         <td>Doe</td>
-        <td><button>Add</button></td>
+        <td><button onclick="displaycart()">Add</button></td>
       </tr>
       <tr>
         <td>Mary</td>
@@ -159,13 +196,21 @@
     </div>
   </div>
   </div>
-  <div class="col-lg-3">
-    Hello World!
+  <div class="col-lg-3 cart" id="mycart">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+  </div>
   </div>
   </div>
 </div>
          <div style="background-color:rgb(91,163,192);color:white;bottom: 0;">
-            <span class="container">
+            <span class="container-float">
                 <span class="row">
                 <span class="col-lg-4 col-sm-12">
                     <ul style="list-style-type:none">
